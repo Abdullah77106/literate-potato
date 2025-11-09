@@ -4,33 +4,28 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>أبو راكان للزجاج والألمنيوم</title>
-
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;800&display=swap" rel="stylesheet">
-
-  <!-- Swiper CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-
-  <!-- main CSS -->
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+  <!-- HEADER (مُثبت دائماً) -->
   <header id="siteHeader">
     <div class="container nav">
       <div class="brand">
         <img src="images/logo.png" alt="أبو راكان" class="logo">
         <div>
           <div class="title">أبو راكان للزجاج والألمنيوم</div>
+          <div class="sub">الرياض — الصناعية القديمة — مخرج 17</div>
         </div>
       </div>
-
       <nav>
         <ul>
           <li><a href="#home">الرئيسية</a></li>
           <li><a href="#about">من نحن</a></li>
           <li><a href="#services">خدماتنا</a></li>
           <li><a href="#works">أعمالنا</a></li>
-          <li><a href="#values">ما نمتاز به</a></li>
+          <li><a href="#values">قيمنا</a></li>
           <li><a href="#contact">تواصل معنا</a></li>
         </ul>
       </nav>
@@ -69,7 +64,7 @@
 
       <div class="service-card">
         <img class="service-img" src="images/facades/img1.jpg" alt="واجهات ومكاتب ودرابزين">
-        <h3>واجهات ومكاتب ودربزين وشاورات</h3>
+        <h3>واجهات ومكاتب</h3>
         <p>تصاميم واجهات عصرية ومكاتب زجاجية ودرابزين داخلي وخارجي.</p>
       </div>
 
@@ -80,7 +75,7 @@
       </div>
 
       <div class="service-card">
-        <img class="service-img" src="images/aluminum/img1.jpg" alt="أعمال ألمنيوم">
+        <div class="no-image">ألمنيوم</div>
         <h3>أعمال ألمنيوم</h3>
         <p>نوافذ، أبواب ومشروعات ألمنيوم بتشطيب احترافي ومتانة طويلة.</p>
       </div>
@@ -92,10 +87,34 @@
     <div class="works-wrap">
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
-          <div class="swiper-slide"><img class="slide-img" src="images/works/work1.jpg" alt=""></div>
-          <div class="swiper-slide"><img class="slide-img" src="images/works/work2.jpg" alt=""></div>
-          <div class="swiper-slide"><img class="slide-img" src="images/works/work3.jpg" alt=""></div>
-          <div class="swiper-slide"><img class="slide-img" src="images/works/work4.jpg" alt=""></div>
+          <!-- كل سلايد يحتوي صورة + زر طلب عرض سعر -->
+          <div class="swiper-slide">
+            <div class="work-card">
+              <img class="slide-img" src="images/works/work1.jpg" alt="واجهات زجاج">
+              <button class="request-btn" data-service="واجهات زجاج">اطلب عرض سعر</button>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="work-card">
+              <img class="slide-img" src="images/works/work2.jpg" alt="درابزين زجاج">
+              <button class="request-btn" data-service="درابزين زجاج">اطلب عرض سعر</button>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="work-card">
+              <img class="slide-img" src="images/works/work3.jpg" alt="كبائن شاور">
+              <button class="request-btn" data-service="كبائن شاور">اطلب عرض سعر</button>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="work-card">
+              <img class="slide-img" src="images/works/work4.jpg" alt="أبواب ألمنيوم">
+              <button class="request-btn" data-service="أبواب ألمنيوم">اطلب عرض سعر</button>
+            </div>
+          </div>
         </div>
         <div class="swiper-pagination"></div>
       </div>
@@ -103,28 +122,12 @@
   </section>
 
   <section id="values" class="container">
-    <h2 class="section-title">ما نمتاز به</h2>
+    <h2 class="section-title">قيمنا</h2>
     <div class="values-grid">
-      <div class="value-card">
-        <div class="value-ico">🏅</div>
-        <h4>الجودة</h4>
-        <p>أعلى معايير الجودة والمواد المستخدمة.</p>
-      </div>
-      <div class="value-card">
-        <div class="value-ico">🔒</div>
-        <h4>الأمان</h4>
-        <p>تركيبات آمنة ومطابقة للمواصفات.</p>
-      </div>
-      <div class="value-card">
-        <div class="value-ico">🎯</div>
-        <h4>الاحترافية</h4>
-        <p>فريق عمل ذو خبرة ومهارة.</p>
-      </div>
-      <div class="value-card">
-        <div class="value-ico">⏱️</div>
-        <h4>الالتزام بالمواعيد</h4>
-        <p>تسليم في الوقت المحدد بدون تأخير.</p>
-      </div>
+      <div class="value-card"><div class="value-ico">🏅</div><h4>الجودة</h4><p>أعلى معايير الجودة والمواد المستخدمة.</p></div>
+      <div class="value-card"><div class="value-ico">🔒</div><h4>الأمان</h4><p>تركيبات آمنة ومطابقة للمواصفات.</p></div>
+      <div class="value-card"><div class="value-ico">🎯</div><h4>الاحترافية</h4><p>فريق عمل ذو خبرة ومهارة.</p></div>
+      <div class="value-card"><div class="value-ico">⏱️</div><h4>الالتزام بالمواعيد</h4><p>تسليم في الوقت المحدد بدون تأخير.</p></div>
     </div>
   </section>
 
@@ -160,17 +163,37 @@
     </div>
   </footer>
 
-  <!-- WhatsApp menu -->
+  <!-- Modal طلب عرض سعر -->
+  <div id="requestModal" class="modal-hidden">
+    <div class="modal-backdrop"></div>
+    <div class="modal-card">
+      <button class="modal-close" id="modalClose">×</button>
+      <h3>اطلب عرض سعر</h3>
+      <form id="quickRequestForm">
+        <label>الاسم</label>
+        <input type="text" name="rq_name" required>
+        <label>الهاتف</label>
+        <input type="tel" name="rq_phone" required>
+        <label>الخدمة</label>
+        <input type="text" name="rq_service" id="rq_service" readonly>
+        <label>تفاصيل إضافية</label>
+        <textarea name="rq_message" rows="4"></textarea>
+        <button type="submit" class="cta">إرسال عبر واتساب</button>
+        <div id="rqMsg" class="muted"></div>
+      </form>
+    </div>
+  </div>
+
+  <!-- واتساب صغير -->
   <div class="wa-menu" id="waMenu">
     <a href="https://api.whatsapp.com/send?phone=966509407109" target="_blank">0509407109</a>
     <a href="https://api.whatsapp.com/send?phone=966578423246" target="_blank">0578423246</a>
   </div>
 
   <div class="whatsapp-btn" id="waBtn" title="تواصل عبر واتساب">
-    <img src="images/whatsapp.png" alt="واتساب">
+    <img src="images/whatsapp.svg" alt="واتساب">
   </div>
 
-  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script src="js/script.js"></script>
 </body>
